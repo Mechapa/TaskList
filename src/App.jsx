@@ -10,11 +10,11 @@ function App() {
     <>
       <Router>
         <nav className='taskNav'>
-          <Link className='navLink' to="/active">Активные задачи</Link>
+          <Link className='navLink' to="/">Активные задачи</Link>
           <Link className='navLink' to="/deleted">Удаленные задачи</Link>
         </nav>
         <Routes>
-          <Route path="/active" element={<TaskPage/>}></Route>
+          <Route path="/" element={<TaskPage/>}></Route>
           <Route path="/deleted" element={<DeletedTaskPage/>}></Route>
         </Routes>
       </Router>
