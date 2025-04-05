@@ -8,7 +8,7 @@ function App() {
 
   return (
     <>
-      <Router>
+      <Router basename='/TaskList'>
         <nav className='taskNav'>
           <Link className='navLink' to="/">Активные задачи</Link>
           <Link className='navLink' to="/deleted">Удаленные задачи</Link>
